@@ -129,7 +129,7 @@ def main():
     jobs = []
 
     for initial_percentage_immune,Immune_compliance_at_start in  [(0.0,1),(0.5,1)]:
-        for people_per_day in [100]:
+        for people_per_day in [200]:
             for immune_source,min_age in [(InitialImmuneType.GENERAL_POPULATION,18)]:#the options are:GENERAL_POPULATION,HOUSEHOLDS
                 for initial_num_infected in [25, 100, 250, 500]:
                     for city_name, scale in [("Holon",1),("Bene Beraq",1)]:
